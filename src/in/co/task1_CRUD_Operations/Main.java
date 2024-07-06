@@ -29,7 +29,7 @@ public class Main {
                 case 2:
                     System.out.println("Enter your name");
                     String name = sc.next();
-                    sc.next();
+
                     try{
                         if(DAO.delete(name))
                             System.out.println("Data deleted successfully");
@@ -44,7 +44,7 @@ public class Main {
                     pojo.setAge(sc.nextInt());
                     System.out.println("Enter your Occupation");
                     pojo.setJob(sc.next());
-                    sc.next();
+
                     try{
                         if(DAO.update(pojo))
                             System.out.println("Data updated successfully");
