@@ -1,4 +1,4 @@
-package in.co.task2_multithreading.using_thread_class;
+package in.co.zitsolutions.task2_multithreading.using_thread_class;
 
 public class Hi extends Thread{
     @Override

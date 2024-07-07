@@ -1,4 +1,4 @@
-package in.co.task2_multithreading.using_runable_interface;
+package in.co.zitsolutions.task2_multithreading.using_runable_interface;
 
 public class Main {
     public static void main(String[] args) {
