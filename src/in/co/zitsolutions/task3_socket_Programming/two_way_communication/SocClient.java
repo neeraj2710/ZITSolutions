@@ -1,4 +1,4 @@
-package in.co.zitsolutions.task3_socket_Programming.one_way_communication;
+package in.co.zitsolutions.task3_socket_Programming.two_way_communication;
 
 import java.io.*;
 import java.net.Socket;
@@ -16,6 +16,8 @@ public class SocClient {
         pw.println(str);
         pw.flush();
 
-
+        BufferedReader br = new BufferedReader(new InputStreamReader(s.getInputStream()));
+        String str2 = br.readLine();
+        System.out.println("Data from server : "+str2);
     }
 }

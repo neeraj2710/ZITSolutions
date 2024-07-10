@@ -1,4 +1,4 @@
-package in.co.zitsolutions.task3_socket_Programming.one_way_communication;
+package in.co.zitsolutions.task3_socket_Programming.two_way_communication;
 
 import java.io.*;
 import java.net.ServerSocket;
@@ -18,6 +18,10 @@ public class SocServer {
         String data = br.readLine();
         System.out.println("Client Data : "+data);
 
-
+        OutputStreamWriter os = new OutputStreamWriter(s.getOutputStream());
+        PrintWriter pw = new PrintWriter(os);
+        pw.println(data.substring(0,3));
+        pw.flush();
+        System.out.println("data sent");
     }
 }
