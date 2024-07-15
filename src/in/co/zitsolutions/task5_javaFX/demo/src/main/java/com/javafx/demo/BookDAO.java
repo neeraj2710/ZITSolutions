@@ -46,7 +46,7 @@ public class BookDAO {
     public static ObservableList<BookBean> selectAll() throws SQLException{
         ObservableList<BookBean> list = FXCollections.observableArrayList();
         Statement stmt = conn.createStatement();
-        ResultSet rs = stmt.executeQuery("select * from books");
+        ResultSet rs = stmt.executeQuery("select * from books order by id");
         while (rs.next()){
             BookBean book = new BookBean(rs.getInt("id"),rs.getString("title"),rs.getString("author"),rs.getInt("year"),rs.getInt("pages"));
             list.add(book);
