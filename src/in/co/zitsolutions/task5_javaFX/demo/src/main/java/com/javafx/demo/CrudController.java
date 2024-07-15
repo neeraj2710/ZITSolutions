@@ -1,4 +1,4 @@
-package com.spring_ai.demo;
+package com.javafx.demo;
 
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -9,7 +9,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.sql.SQLException;
-import java.util.List;
 
 public class CrudController {
     @javafx.fxml.FXML

@@ -1,4 +1,4 @@
-package com.spring_ai.demo;
+package com.javafx.demo;
 
 public class BookBean {
     private int id;

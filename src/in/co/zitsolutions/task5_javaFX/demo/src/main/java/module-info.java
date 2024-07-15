@@ -12,6 +12,6 @@ module com.spring_ai.demo {
     requires com.almasb.fxgl.all;
     requires java.sql;
 
-    opens com.spring_ai.demo to javafx.fxml;
-    exports com.spring_ai.demo;
+    opens com.javafx.demo to javafx.fxml;
+    exports com.javafx.demo;
 }

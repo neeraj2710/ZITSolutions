@@ -1,4 +1,4 @@
-package com.spring_ai.demo;
+package com.javafx.demo;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
