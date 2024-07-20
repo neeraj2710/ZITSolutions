@@ -2,7 +2,7 @@ package in.co.zitsolutions.task4_serialization_deserialization;
 
 import java.io.*;
 
-public class Main {
+public class Serialize {
     public static void main(String[] args) throws Exception {
         Pojo p = new Pojo();
         p.setName("Raj");
@@ -13,11 +13,7 @@ public class Main {
         ObjectOutputStream oos = new ObjectOutputStream(fos);
         oos.writeObject(p);
 
-        FileInputStream fis = new FileInputStream(f);
-        ObjectInputStream ois = new ObjectInputStream(fis);
-        Pojo p1 = (Pojo) ois.readObject();
-
-        System.out.println(p);
+        System.out.println("Object serialized");
 
     }
 }

@@ -40,9 +40,7 @@ public class CrudController {
     @javafx.fxml.FXML
     private TableView<BookBean> tbBooks;
 
-    public void handleButtonAction(ActionEvent e){
-        System.out.println("Event handler called");
-    }
+
 
     public void showBooks(){
         this.tbBooks.getItems().clear();

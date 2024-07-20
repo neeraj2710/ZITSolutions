@@ -16,7 +16,7 @@ public class BookDAO {
         }
     }
 
-    public static void insert(BookBean book) throws SQLException {
+    public static void insert(com.javafx.demo.BookBean book) throws SQLException {
         PreparedStatement ps = conn.prepareStatement("insert into books values(?,?,?,?,?)");
         ps.setInt(1,book.getId());
         ps.setString(2,book.getTitle());
@@ -26,7 +26,7 @@ public class BookDAO {
         ps.executeUpdate();
     }
 
-    public static void update(BookBean book) throws SQLException {
+    public static void update(com.javafx.demo.BookBean book) throws SQLException {
         String qry = "update books set title=?,author=?,year=?,pages=? where id=?";
         PreparedStatement ps = conn.prepareStatement(qry);
         ps.setString(1,book.getTitle());
@@ -43,7 +43,7 @@ public class BookDAO {
         ps.executeUpdate();
     }
 
-    public static ObservableList<BookBean> selectAll() throws SQLException{
+    public static ObservableList<com.javafx.demo.BookBean> selectAll() throws SQLException{
         ObservableList<BookBean> list = FXCollections.observableArrayList();
         Statement stmt = conn.createStatement();
         ResultSet rs = stmt.executeQuery("select * from books order by id");
